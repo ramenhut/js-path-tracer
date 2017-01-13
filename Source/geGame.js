@@ -6,6 +6,7 @@ function CVGameSystem()
     var sceneList = [];
 
     this.Initialize = function () {
+
         //
         // Setup our scene list
         //

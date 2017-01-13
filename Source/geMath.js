@@ -5,10 +5,10 @@
 
 function CompareEpsilon( a, b )
 {
-	if ( a > ( b - EPSILON ) && a < ( b + EPSILON ) )
-		return true;
+    if ( a > ( b - EPSILON ) && a < ( b + EPSILON ) )
+        return true;
 
-	return false;
+    return false;
 }
 
 function rands()

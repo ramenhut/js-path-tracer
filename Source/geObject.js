@@ -40,7 +40,7 @@ function CSphere()
         origin.Set(x, y, z);
     }
 
-	this.SetOrigin = function ( v )
+    this.SetOrigin = function ( v )
     {
         origin.Assign( v );
     }

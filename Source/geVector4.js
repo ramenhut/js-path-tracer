@@ -68,13 +68,13 @@ function CVector4()
     this.Project = function ( rhs )
     {
         //
-	    // Project rhs onto *this
-	    //
+        // Project rhs onto *this
+        //
 
         var thisNormal = this.Normalize();
 
-	    var projectedLength = rhs.Dot( thisNormal );
-	    
+        var projectedLength = rhs.Dot( thisNormal );
+        
         return thisNormal.MulScalar( projectedLength );
     }
 
@@ -97,19 +97,19 @@ function CVector4()
     {
         var product = this.Dot( rhs );
 
-	    //
-	    // cos(t) = v1 (dot) v2 / ||v1|| * ||v2|| 
-	    //
+        //
+        // cos(t) = v1 (dot) v2 / ||v1|| * ||v2|| 
+        //
 
-	    var len1 = this.Length();
-	    var len2 = rhs.Length();
+        var len1 = this.Length();
+        var len2 = rhs.Length();
 
-	    if ( len1 == 0 ) len1 = 0.1;
-	    if ( len2 == 0 ) len2 = 0.1;
+        if ( len1 == 0 ) len1 = 0.1;
+        if ( len2 == 0 ) len2 = 0.1;
 
-	    var v_angle = product / ( len1 * len2 );
+        var v_angle = product / ( len1 * len2 );
 
-	    return Math.acos( v_angle );
+        return Math.acos( v_angle );
     }
 
     this.Dot = function ( rhs )
@@ -123,7 +123,7 @@ function CVector4()
         
         vecDelta.Set( rhs.GetX() - xyzw[0], rhs.GetY() - xyzw[1], rhs.GetZ() - xyzw[2], rhs.GetW() - xyzw[3] );
 
-	    return vecDelta.Length();
+        return vecDelta.Length();
     }
 
     this.Length = function ()

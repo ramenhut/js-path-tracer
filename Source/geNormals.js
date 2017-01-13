@@ -24,13 +24,13 @@ function CNormalSphere()
 
             solidAxis.Set( 10.0, 10.0, 10.0 );
 
-		    while ( solidAxis.Length() > 1.0 )
-		    {
-			    solidAxis.Set( rands(), rands(), rands() );
-		    }
+            while ( solidAxis.Length() > 1.0 )
+            {
+                solidAxis.Set( rands(), rands(), rands() );
+            }
 
-		    m_NormalList[i] = new CVector3;
-			m_NormalList[i].Assign(solidAxis.Normalize());
+            m_NormalList[i] = new CVector3;
+            m_NormalList[i].Assign(solidAxis.Normalize());
         }
 
         m_bInitialized = true;

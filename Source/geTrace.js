@@ -9,11 +9,11 @@ function CRayInfo()
     //
 
     this.t               = 99999999.0;
-	this.solidAngle      = 0.0;
-	this.emission        = new CVector3;
-	this.diffuse         = new CVector3;
-	this.position        = new CVector3;
-	this.normal          = new CVector3;
+    this.solidAngle      = 0.0;
+    this.emission        = new CVector3;
+    this.diffuse         = new CVector3;
+    this.position        = new CVector3;
+    this.normal          = new CVector3;
 
     //
     // @public interfaces
@@ -37,11 +37,11 @@ function CRay3()
     //
 
     this.start  = new CVector3;
-	this.end    = new CVector3;
+    this.end    = new CVector3;
 
     //
     // @public interfaces
-	//
+    //
 
     this.Assign = function ( rhs )
     {

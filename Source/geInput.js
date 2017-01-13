@@ -50,11 +50,11 @@ function CVInputSystem()
     
         if ( document.addEventListener ) // for FireFox
         {
- 	        document.addEventListener('keydown', this.keydown_isr, true); 
+            document.addEventListener('keydown', this.keydown_isr, true); 
         }
         else if ( document.attachEvent ) // for IE
         {
-      	    document.attachEvent('onkeydown', this.keydown_isr);
+            document.attachEvent('onkeydown', this.keydown_isr);
         }
     
         //
@@ -63,11 +63,11 @@ function CVInputSystem()
     
         if ( document.addEventListener ) // for FireFox
         {
- 	        document.addEventListener('keyup', this.keyup_isr, true); 
+            document.addEventListener('keyup', this.keyup_isr, true); 
         }
         else if ( document.attachEvent ) // for IE
         {
-      	    document.attachEvent('onkeyup', this.keyup_isr );
+            document.attachEvent('onkeyup', this.keyup_isr );
         }
     
         for ( var i = 0; i < GE_INPUT_MAX_KEYS; i++ )
@@ -85,29 +85,29 @@ function CVInputSystem()
     
         if ( document.addEventListener ) // for FireFox
         {
- 	        document.addEventListener('mousemove', this.mousemove_isr, true); 
+            document.addEventListener('mousemove', this.mousemove_isr, true); 
         }
         else if ( document.attachEvent ) // for IE
         {
-      	    document.attachEvent('mousemove', this.mousemove_isr );
+            document.attachEvent('mousemove', this.mousemove_isr );
         }
     
         if ( document.addEventListener ) // for FireFox
         {
- 	        document.addEventListener('mousedown', this.mousedown_isr, true); 
+            document.addEventListener('mousedown', this.mousedown_isr, true); 
         }
         else if ( document.attachEvent ) // for IE
         {
-      	    document.attachEvent('mousedown', this.mousedown_isr );
+            document.attachEvent('mousedown', this.mousedown_isr );
         }
     
         if ( document.addEventListener ) // for FireFox
         {
- 	        document.addEventListener('mouseup', this.mouseup_isr, true); 
+            document.addEventListener('mouseup', this.mouseup_isr, true); 
         }
         else if ( document.attachEvent ) // for IE
         {
-      	    document.attachEvent('mouseup', this.mouseup_isr );
+            document.attachEvent('mouseup', this.mouseup_isr );
         }
     
         //
